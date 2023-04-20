@@ -1,4 +1,66 @@
+/* FONTES EXTRAS */
+@font-face {
+  font-family: Centeria;
+  src: url("recursos/CenteriaScriptDemo.otf");
+}
+
+@font-face {
+  font-family: permapetit;
+  src: url("recursos/ParmaPetit-Normal.ttf");
+}
+
+/* FORMATAÇÃO INICIAL */
+
 * {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #ffc0cb9d;
+}
+
+.alinhamento {
+  margin: 0 80px;
+  border: 5px inset #fc8c9ffb;
+  background-color: #d898984b;
+}
+
+h1 {
+  font-family: Centeria;
+  font-size: 80px;
+  font-weight: lighter;
+  text-align: center;
+  padding: 10px 10px;
+  margin: 20px 20px;
+  border-bottom: 5px white;
+}
+
+h2 {
+  font-family: permapetit;
+  font-weight: normal;
+  font-size: 30px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-family: permapetit;
+  font-weight: normal;
+  font-size: 25px;
+  text-align: center;
+}
+/* .mapa {
+  margin: 0 auto;
+  width: 50vw;
+  height: 50vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+p {
+  font-family: Helvetica;
+  margin-bottom: 30px;
 }

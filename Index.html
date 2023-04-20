@@ -1,77 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <link rel="icon" type="image/png" href="Icone pagina.jpg" />
+    <link rel="icon" type="image/png" href="img/coracoes.jpg" />
     <meta charset="UTF-8" />
-    <title>Casamento de [nome do casal]</title>
+    <title>Casamento Luiz 💍 Karen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="cabecalho">
-      <h1>Casamento de Luiz e Karen</h1>
-      <nav>
-        <a href="sobre.html">Sobre Nós</a></li>
-        <a href="cerimonia.html">Cerimônia</a></li>
-        <a href="fotos.html">Fotos</a></li>
-        <a href="confirmacao.html">RSVP</a></li>
-        <a href="PIX.html">Lista de presentes</a></li>
-      </nav>
-    </header>
-    <main>
-      <section id="sobre-nos">
-        <h2>Sobre Nós</h2>
-        <p>[breve história sobre o casal]</p>
-      </section>
-      <section id="cerimonia">
-        <h2>Cerimônia</h2>
-        <p>[informações sobre o local, data e hora da cerimônia]</p>
-        <h2>Localização:</h2>
-        <p>
-          endereço: Av. Imperatriz Leopoldina, 681 - Vila Leopoldina, São Paulo
-        </p>
-        <h3>Mapa:</h3>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.116898878827!2d-46.735703388278246!3d-23.52829756029164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef96c4ee63615%3A0xe96086b94ac96998!2sBot%C3%A2nico%20Quintal!5e0!3m2!1spt-BR!2sbr!4v1682002863427!5m2!1spt-BR!2sbr"
-          width="450"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </section>
-      <section id="fotos">
-        <h2>Fotos</h2>
-        <p>[galeria de fotos do casal]</p>
-      </section>
-      <section class="PIX">
-        <button
-          type="button"
+    <div class="alinhamento">
+      <header class="cabecalho">
+        <h1>Casamento de Luiz e Karen</h1>
+      </header>
+      <main>
+        <section id="sobre-nos">
+          <h2>Sobre Nós</h2>
+          <p>[breve história sobre o casal]</p>
+        </section>
+        <section id="cerimonia">
+          <h2>Cerimônia</h2>
+          <p>[informações sobre o local, data e hora da cerimônia]</p>
+          <h2>Localização:</h2>
+          <p>
+            Endereço: Av. Imperatriz Leopoldina, 681 - Vila Leopoldina, São
+            Paulo
+          </p>
+          <h3>Mapa:</h3>
+          <!-- <iframe
+            class="mapa"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.116898878827!2d-46.735703388278246!3d-23.52829756029164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef96c4ee63615%3A0xe96086b94ac96998!2sBot%C3%A2nico%20Quintal!5e0!3m2!1spt-BR!2sbr!4v1682002863427!5m2!1spt-BR!2sbr"
+            width="450"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe> -->
+        </section>
+        <section id="fotos">
+          <h2>Fotos</h2>
+          <p>[galeria de fotos do casal]</p>
+        </section>
+        <section class="PIX">
           <button
-          type="button"
-          onclick="window.location.href = 'PIX.html'"
-        >
-          Clique para Ver!
-        </button>
-      </section>
-      <section id="rsvp">
-        <h2>RSVP</h2>
-        <form method="post" action="processa-rsvp.php">
-          <label for="nome">Nome:</label>
-          <input type="text" id="nome" name="nome" required />
-          <label for="email">E-mail:</label>
-          <input type="email" id="email" name="email" required />
-          <label for="telefone">Telefone:</label>
-          <input type="tel" id="telefone" name="telefone" />
-          <label for="mensagem">Mensagem:</label>
-          <textarea id="mensagem" name="mensagem"></textarea>
-          <button type="submit">Enviar</button>
-        </form>
-      </section>
-    </main>
-    <footer>
-      <p><strong>2023</strong> Luiz 💍 Karen</p>
-    </footer>
+            type="button"
+            <button
+            type="button"
+            onclick="window.location.href = 'PIX.html'"
+          >
+            Clique para Ver!
+          </button>
+        </section>
+        <section id="rsvp">
+          <h2>RSVP</h2>
+          <form method="post" action="processa-rsvp.php">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required />
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required />
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" />
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem"></textarea>
+            <button type="submit">Enviar</button>
+          </form>
+        </section>
+      </main>
+      <footer>
+        <p><strong>2023</strong> Luiz 💍 Karen</p>
+      </footer>
+    </div>
   </body>
 </html>
