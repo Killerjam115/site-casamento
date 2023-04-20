@@ -1,0 +1,188 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.corpo {
+  border: 5px solid black;
+  padding: 0 1px;
+}
+
+.bloco {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+body {
+  /* border: 5px solid black; */
+  background-color: #ffffff96;
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin: 50px auto;
+}
+
+h2,
+h3 {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgba(160, 160, 160, 0.144);
+}
+
+h2 {
+  position: relative;
+}
+
+h2::after {
+  content: "À venda";
+  background-color: red;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  position: absolute;
+  padding: 5px 5px;
+  top: -15px;
+  left: -50px;
+}
+
+h4 {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h5 {
+  font-weight: bold;
+}
+
+.entrega {
+  color: #8a8a8ad7;
+  margin-bottom: 25px;
+  margin-top: 0;
+  font-size: 15px;
+}
+
+.preço {
+  /* text-decoration: underline overline solid #fa0000; */
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: #a1a1a1;
+}
+
+a:hover {
+  color: black;
+}
+
+a:active {
+  color: red;
+}
+
+.button {
+  background-color: #000000;
+  border: none;
+  color: #ffffff;
+  padding: 15px 450px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+li {
+  list-style-type: square;
+  margin-bottom: 10px;
+  margin-left: 25px;
+}
+
+.cores {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.quadrado_preto {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: black;
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.quadrado_azul {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: blue;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.quadrado_azul {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: blue;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.quadrado_vermelho {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: red;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.quadrado_amarelo {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: yellow;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.quadrado_verde {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: green;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.quadrado_marrom {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: brown;
+  margin-left: 10px;
+  margin-right: 10px;
+}
