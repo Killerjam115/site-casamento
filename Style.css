@@ -91,6 +91,7 @@ footer {
   text-align: center;
   font-size: 10px;
   padding-top: 15vh;
+  background-color: white;
 }
 
 .botao {
@@ -105,6 +106,7 @@ footer {
   left: 50%;
   transform: translateX(-50%);
 }
+
 .gradiente {
   background-image: linear-gradient(
     to bottom,
@@ -116,6 +118,18 @@ footer {
 }
 
 .formatacao-fotos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 960px; /* Largura máxima da div */
   background-color: white;
-  display: flexbox;
+  border-bottom: #f77389 solid 5px;
+  border-top: #f77389 solid 5px;
+}
+
+.formatacao-fotos img {
+  max-width: 20vh; /* Tamanho máximo da imagem */
+  height: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
