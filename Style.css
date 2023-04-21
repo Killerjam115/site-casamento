@@ -9,7 +9,7 @@
   src: url("recursos/ParmaPetit-Normal.ttf");
 }
 
-/* FORMATAÇÃO INICIAL - texto/margens/padding/cores */
+/* FORMATAÇÃO INICIAL - texto/margens/padding/cores/alinhamentos */
 
 * {
   margin: 0;
@@ -20,7 +20,6 @@
 body {
   background-color: #ffc0cb9d;
 }
-
 
 .alinhamento {
   margin: 0 10vw;
@@ -42,20 +41,19 @@ h1 {
   background-repeat: no-repeat;
 }
 
-h1::after{
+h1::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 100%; 
+  width: 100%;
   height: 50px;
   background-image: url(IMG/underline\ brush.png);
   background-repeat: no-repeat;
-  background-size: contain; 
-  background-position: bottom; 
-  z-index: -1; 
+  background-size: contain;
+  background-position: bottom;
+  z-index: -1;
 }
-
 
 h2 {
   font-family: permapetit;
@@ -72,26 +70,30 @@ h3 {
   font-size: 25px;
   text-align: center;
 }
-/* .mapa {
-  margin: 0 auto;
-  width: 50vw;
-  height: 50vh;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
+
+.mapa-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
 }
+
+.mapa {
+  width: 100%;
+  height: 100%;
+}
+
 p {
   font-family: Helvetica;
 }
 
-footer{ 
+footer {
   text-align: center;
   font-size: 10px;
   padding-top: 15vh;
 }
 
-.botao{ 
+.botao {
   background-color: #f77389;
   padding: 1vh 25px;
   border: solid #f77389;
@@ -103,7 +105,17 @@ footer{
   left: 50%;
   transform: translateX(-50%);
 }
+.gradiente {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  height: 100px; /* altura da transição de cor */
+  width: 100%;
 }
 
-
-
+.formatacao-fotos {
+  background-color: white;
+  display: flexbox;
+}

@@ -19,7 +19,7 @@
         <h1>Casamento de Luiz e Karen</h1>
       </header>
       <main>
-        <section id="sobre-nos">
+        <section class="sobre-nos">
           <h2>Sobre Nós</h2>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, id,
@@ -28,7 +28,7 @@
             laboriosam. Ducimus.
           </p>
         </section>
-        <section id="cerimonia">
+        <section class="cerimonia">
           <h2>Cerimônia</h2>
           <p>
             Te esperamos no
@@ -46,25 +46,36 @@
             Paulo
           </p>
           <h3>Mapa:</h3>
-          <!-- <iframe
-            class="mapa"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.116898878827!2d-46.735703388278246!3d-23.52829756029164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef96c4ee63615%3A0xe96086b94ac96998!2sBot%C3%A2nico%20Quintal!5e0!3m2!1spt-BR!2sbr!4v1682002863427!5m2!1spt-BR!2sbr"
-            width="450"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe> -->
+          <div class="mapa-container">
+            <iframe
+              class="mapa"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.116898878827!2d-46.735703388278246!3d-23.52829756029164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef96c4ee63615%3A0xe96086b94ac96998!2sBot%C3%A2nico%20Quintal!5e0!3m2!1spt-BR!2sbr!4v1682002863427!5m2!1spt-BR!2sbr"
+              width="450"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </section>
-        <section id="fotos">
+        <section class="fotos">
           <h2>Fotos</h2>
-          <img src="img/balão-selfie.jpeg" width="200" height="auto" />
-          <img src="img/Egito-selfie.jpeg" width="200" height="auto" />
-          <img src="img/Praia-frio.jpeg" width="200" height="auto" />
-          <img src="img/piscina-hotel.jpeg" width="200" height="auto" />
-          <img src="img/piramides-selfie.jpeg" width="200" height="auto" />
-          <img src="img/selfie-mato.jpeg" width="200" height="auto" />
+          <div class="secao-rosa">
+            <!-- conteúdo da seção rosa -->
+          </div>
+          <div class="gradiente"></div>
+          <div class="secao-branca">
+            <!-- conteúdo da seção branca -->
+          </div>
+          <div class="formatacao-fotos">
+            <img src="img/Hotel-seflie.jpeg" width="200" height="auto" />
+            <img src="img/Egito-selfie.jpeg" width="200" height="auto" />
+            <img src="img/Praia-frio.jpeg" width="200" height="auto" />
+            <img src="img/piscina-hotel.jpeg" width="200" height="auto" />
+            <img src="img/piramides-selfie.jpeg" width="200" height="auto" />
+            <img src="img/selfie-mato.jpeg" width="200" height="auto" />
+          </div>
         </section>
         <section class="PIX">
           <button
@@ -77,7 +88,7 @@
             Lista de presentes
           </button>
         </section>
-        <!-- <section id="rsvp">
+        <!-- <section class="rsvp">
           <h2>RSVP</h2>
           <form method="post" action="processa-rsvp.php">
             <label for="nome">Nome:</label>
