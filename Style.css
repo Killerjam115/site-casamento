@@ -37,8 +37,6 @@ h1 {
   margin: 20px 20px;
   padding-bottom: 50px;
   position: relative;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 h1::after {
@@ -128,7 +126,7 @@ footer {
 }
 
 .formatacao-fotos img {
-  max-width: 20vh; /* Tamanho máximo da imagem */
+  max-width: 35vw; /* Tamanho máximo da imagem */
   height: auto;
   margin-bottom: 20px;
   margin-top: 20px;
