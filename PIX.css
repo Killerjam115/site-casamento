@@ -1,0 +1,125 @@
+/* FONTES EXTRAS - utilizadas no site */
+@font-face {
+  font-family: Centeria;
+  src: url("recursos/CenteriaScriptDemo.otf");
+}
+
+@font-face {
+  font-family: permapetit;
+  src: url("recursos/ParmaPetit-Normal.ttf");
+}
+
+/* FORMATAÇÃO INICIAL - texto/margens/padding/cores/alinhamentos */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #ffc0cb9d;
+}
+
+.alinhamento {
+  margin: 0 10vw;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #d898984b;
+}
+
+h1 {
+  font-family: Centeria;
+  font-size: 40px;
+  font-weight: lighter;
+  text-align: center;
+  padding: 10px 10px;
+  margin: 20px 20px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-image: url(IMG/underline\ brush.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  z-index: -1;
+}
+
+h2 {
+  font-family: permapetit;
+  font-weight: normal;
+  font-size: 30px;
+  margin-left: 10px;
+  margin-bottom: ;
+  margin-top: 15px;
+}
+
+h3 {
+  font-family: permapetit;
+  font-weight: normal;
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+p {
+  font-family: Helvetica;
+}
+
+.QRcodes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 100vw; /* Largura máxima da div */
+  max-height: auto;
+  background-color: white;
+  border-bottom: #f77389 solid 5px;
+  border-top: #f77389 solid 5px;
+}
+
+.QRcodes img {
+  max-width: 35vw; /* Tamanho máximo da imagem */
+  height: auto;
+  margin: 20px 20px;
+}
+
+.botao {
+  background-color: #f77389;
+  padding: 1vh 25px;
+  border: solid #f77389;
+  border-radius: 50px;
+  font-size: 20px;
+  color: white;
+}
+
+#copy-button {
+  background-color: #f77389;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+#copy-button:hover {
+  background-color: #a30d53;
+  color: #ffffff88;
+  border: solid #a30d53;
+  cursor: pointer;
+}
+
+#copy-button:active {
+  background-color: #ffffff;
+  color: #000000;
+  border: solid #ffffff;
+}
+
+#link-input {
+  display: none;
+}
