@@ -18,14 +18,11 @@
 }
 
 body {
-  background-color: #f84e79a6;
+  background-color: #521b35;
 }
 
 .alinhamento {
-  margin: 0 10vw;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: #c24d61;
+  margin: 0 0;
 }
 
 h1 {
@@ -88,7 +85,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  height: 50vw;
 }
 
 .mapa {
@@ -108,35 +105,38 @@ footer {
   padding-top: 15vh;
 }
 
+a:link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #fdfcfc00;
+}
+
+a:hover {
+  color: #ff4500;
+  font-weight: bold;
+}
+
+a:active {
+  background: rgb(255, 0, 0);
+  font-style: italic;
+}
+
 /* GRADIENTES FOTOS */
 
-.gradiente {
+.fotos {
+  background-color: #ffffff34; /* Define o fundo branco */
   background-image: linear-gradient(
     to bottom,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
-  height: 15vh; /* altura da transição de cor */
-  width: 100%;
+    #521b35,
+    #fff,
+    #521b35
+  ); /* Cria o gradiente nas bordas superior e inferior */
+  padding: 15px 0;
+  margin: 20px 0;
 }
-
-.container {
-  display: flex;
-  flex-direction: column;
-  height: 15vh;
-}
-
-.section1 {
-  background-color: white;
-  flex: 1;
-}
-
-.section2 {
-  background-color: #c24d61;
-  flex: 1;
-  background-image: linear-gradient(to bottom, white, #c24d61);
-}
-
 /* FOTOS  */
 
 .carousel {
@@ -147,9 +147,8 @@ footer {
   height: 50vw;
   overflow: hidden;
   position: relative;
-  background-color: white;
-  border-bottom: #f77389 solid 5px;
-  border-top: #f77389 solid 5px;
+  margin: 20px auto;
+  padding: 20px auto;
 }
 .carousel img {
   position: absolute;
@@ -164,30 +163,37 @@ footer {
 
 /* FUNÇÃO DO BOTÃO PRINCIPAL (PIX) */
 
+.wrapper {
+  bottom: 25px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
 .botao {
-  background-color: #f77389;
-  padding: 1vh 25px;
-  border: solid #f77389;
+  display: block;
+  margin: auto;
+  background-color: #c45365;
+  padding: 1vh 2px;
+  width: 200px;
+  border: solid #fff;
   border-radius: 50px;
   font-size: 20px;
   color: white;
+  animation: breathe 3s infinite ease-in-out;
   position: fixed;
-  bottom: 25px; /* ou outro valor, dependendo da altura do botão */
-  left: 50%;
-  transform: translateX(-50%);
 }
 
-button:hover {
-  background-color: #a30d53;
-  color: #ffffff88;
-  border: solid #a30d53;
-  cursor: pointer;
-}
-
-button:active {
-  background-color: #ffffff;
-  color: #000000;
-  border: solid #ffffff;
+@keyframes breathe {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /* CSS GRID */
@@ -198,6 +204,7 @@ button:active {
   grid-template-rows: auto auto auto;
   row-gap: 5vh;
   max-width: auto;
+  margin: 15px;
 }
 
 .sobre-nos {
@@ -213,7 +220,9 @@ button:active {
   grid-row: 2;
   align-items: center;
   align-self: center;
-  justify-self: right;
+  justify-self: center;
+  border-bottom: solid 2px #fff;
+  padding: auto;
 }
 
 .cerimonia {
@@ -226,7 +235,9 @@ button:active {
   grid-column: 1;
   grid-row: 3;
   align-self: center;
-  justify-self: right;
+  justify-self: center;
+  border-bottom: solid 2px #fff;
+  padding: auto;
 }
 .localizacao {
   grid-column: 2/4;
