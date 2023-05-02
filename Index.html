@@ -29,7 +29,6 @@
         <section class="sobre-nos">
           <h2>Nossa história</h2>
           <p>
-          
 Nos conhecemos há mais de 13 anos, quando começamos a trabalhar juntos na PwC. Foram muitos anos de horas intermináveis de trabalho, de histórias sobre famílias, amigos, viagens e também de muitos conselhos e apoio. Daí surgiu uma grande amizade e um respeito mútuo que transbordou as barreiras do trabalho. 
 Nós dois deixamos a PwC, mas a amizade que criamos e fortalecemos não nos deixou. Continuamos, mesmo de longe, acompanhando os passos um do outro, aplaudindo ou dando puxões de orelha quando necessário.
 Como diz uma canção “o seu amor pode estar do seu lado”, em algum momento inesperado a amizade virou carinho, que virou parceria, admiração e então nasceu o amor. 
@@ -108,8 +107,10 @@ Agora estamos escrevendo um novo capítulo da nossa história e queremos você, 
         <section class="PIX">
           <button 
           src="PIX.html" 
+          id="scroll-to-end-btn"
           class="botao wrapper"
-          type="button"> <a href="PIX.html" > Sugestão de Presente </a>          
+          type="submit"
+          onclick="openPopup()">Sugestão de Presente </a>          
         </button>
         </section>
         <section class="rsvp">
@@ -124,11 +125,49 @@ Agora estamos escrevendo um novo capítulo da nossa história e queremos você, 
             <input class="botaoform" type="submit" value="Enviar" />
           </form>
         </div>
+        </section>
+        <section class="Pixpopup" id="popup">
+          <button type="button" onclick="closePopup()"> ❌ </button>
+          <div class="intropix">
+            <h2>Sugestões de presentes</h2>
+            <p>Estamos pensando em fazer algo um pouco diferente: 
+              Ao invez de pedir presentes para o casamento, pensamos em um sistema de "nos ajude a se presentear!"
+              Estão seguem abaixo os valores que precisamos para comprar nosso presentes!
+            </p>
+            <div>
+              <h3>Opção I: Almoço/jantar na praia – R$ 200,00</h3>
+          </div>
+          <div>
+              <h3>Opção II: Passeio de barco – R$ 400,00</h3>
+          </div>
+          <div>
+              <h3>Opção III: Diária de hotel – R$ 800,00</h3>
+          </div>
+          <div>
+              <h3>Opção IV: Passagens aéreas – R$ 1.000,00</h3>
+          </div>
+          </div>
+          <div class="informações-da-conta">
+            <h2>Informações da conta</h2>
+            <div id="mensagem-copia" 
+              style="display:none;"
+              class="copiacola">
+              Texto copiado para a área de transferência
+            </div>
+            <h5>Banco: Nubank (260) <button onclick="copiarTexto('260')">Copiar</button></h5>
+            <h5>Agência: 0001 <button onclick="copiarTexto('0001')">Copiar</button></h5>
+            <h5>Conta Corrente: 48346444-1 <button onclick="copiarTexto('48346444-1')">Copiar</button></h5>
+            <h5>CPF: 321.937.468-93 <button onclick="copiarTexto('321.937.468-93')">Copiar</button></h5>
+            <h5>Chave PIX<button onclick="copiarTexto('f541ab21-8dd0-48bb-a609-7136713346a2')">Copiar</button></h5>
+          </div>
+          <img class="QRcodepix" src="img/QRcodepix.png">
+         
+        </section>
       </main>
-      <script type="text/javascript" src="index.js"></script>
       <footer>
         <p><strong>2023</strong> Luiz 💍 Karen</p>
       </footer>
     </div>
+    <script type="text/javascript" src="index.js"></script>
   </body>
 </html>

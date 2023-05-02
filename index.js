@@ -40,3 +40,42 @@ var x = setInterval(function () {
       "A contagem regressiva acabou!";
   }
 }, 1000);
+
+//Copiar informações para TED ou PIX
+
+function copiarTexto(texto) {
+  navigator.clipboard.writeText(texto).then(
+    function () {
+      console.log("Texto copiado com sucesso: " + texto);
+      document.getElementById("mensagem-copia").style.display = "block";
+      setTimeout(function () {
+        document.getElementById("mensagem-copia").style.display = "none";
+      }, 2500); // define o tempo de 3 segundos para o texto sumir
+    },
+    function () {
+      console.error("Falha ao copiar texto");
+    }
+  );
+}
+
+//PopUp PIX
+
+let popup = document.getElementById("popup");
+
+function openPopup() {
+  popup.classList.add("open-popup");
+}
+
+function closePopup() {
+  popup.classList.remove("open-popup");
+}
+
+//Scroll botão pix
+
+const scrollToBottom = () => {
+  document.documentElement.scrollTop = document.documentElement.scrollHeight;
+};
+
+document
+  .getElementById("scroll-to-end-btn")
+  .addEventListener("click", scrollToBottom);

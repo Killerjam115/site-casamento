@@ -23,6 +23,7 @@ body {
 
 .alinhamento {
   margin: 0 0;
+  position: relative;
 }
 
 h1 {
@@ -134,7 +135,7 @@ a:active {
   background-image: linear-gradient(
     to bottom,
     #f0f5d5,
-    lightblue,
+    #00fff241,
     #f0f5d5
   ); /* Cria o gradiente nas bordas superior e inferior */
   padding: 15px 0;
@@ -260,7 +261,7 @@ a:active {
 }
 
 form {
-  border: #00fff2 2px solid;
+  border: #00fff241 2px solid;
   padding: 25px;
 }
 
@@ -269,7 +270,7 @@ input {
   padding: 12px 20px;
   margin: 10px;
   box-sizing: border-box;
-  border: 2px solid #00fff2;
+  border: 2px solid #00fff241;
   border-radius: 4px;
 }
 label {
@@ -279,7 +280,7 @@ label {
 input[type="button"],
 input[type="submit"],
 input[type="reset"] {
-  background-color: #00fff2;
+  background-color: #00fff241;
   border: none;
   color: white;
   padding: 16px 32px;
@@ -289,11 +290,13 @@ input[type="reset"] {
 
 /* CONTAGEM REGRESSIVA */
 
-.contagem {
+#countdown {
   display: flex;
-  align-items: stretch;
+  flex-grow: 1;
   justify-content: center;
-  width: 100%;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .contagemh2 {
@@ -301,25 +304,16 @@ input[type="reset"] {
   margin-top: 100px;
 }
 
-#countdown {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
-  justify-content: center;
-  align-items: center;
-  height: 250px;
-  width: 100%;
-  max-width: 750px;
-}
-
 .square {
-  background-color: #00fff2;
+  background-color: #00fff241;
   border: 2px solid #000000;
   text-align: center;
   font-size: 200%;
   font-weight: bold;
-  /* padding: 30px; */
   border-radius: 10px;
+  height: 130px;
+  width: 35%;
+  max-width: 130px;
 }
 
 .label {
@@ -334,4 +328,70 @@ input[type="reset"] {
   color: #000000;
   font-family: permapetit;
   font-size: 200%;
+}
+
+/* POPup PIX */
+
+.Pixpopup {
+  position: absolute;
+  background-color: #f0f5d5;
+  margin: 0 12px;
+  bottom: 15px;
+  border: black solid 2px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.open-popup {
+  visibility: visible;
+  animation: fadeInAnimation 2s ease-in-out forwards;
+}
+
+.Pixpopup h3 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.Pixpopup h2 {
+  text-align: center;
+}
+
+.QRcodepix {
+  height: auto;
+  max-width: 200px;
+}
+
+.informações-da-conta {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: base;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.QRcodepix {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.Pixpopup button {
+  background-color: #00fff241;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 10px 30px;
+  text-decoration: none;
+  cursor: pointer;
 }
