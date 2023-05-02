@@ -335,11 +335,13 @@ input[type="reset"] {
 .Pixpopup {
   position: absolute;
   background-color: #f0f5d5;
-  margin: 0 12px;
   bottom: 15px;
   border: black solid 2px;
   opacity: 0;
   visibility: hidden;
+  max-width: 800px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 @keyframes fadeInAnimation {
@@ -361,6 +363,17 @@ input[type="reset"] {
   text-align: center;
 }
 
+.informações-da-conta {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: auto;
+  row-gap: 15px;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: right;
+  margin: 25px 0;
+}
+
 .Pixpopup h2 {
   text-align: center;
 }
@@ -368,16 +381,6 @@ input[type="reset"] {
 .QRcodepix {
   height: auto;
   max-width: 200px;
-}
-
-.informações-da-conta {
-  display: flex;
-  /* flex-direction: column; */
-  justify-content: center;
-  align-items: base;
-  flex-grow: 1;
-  flex-wrap: wrap;
-  gap: 15px;
 }
 
 .QRcodepix {
