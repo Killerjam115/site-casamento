@@ -18,7 +18,7 @@
 }
 
 body {
-  background-color: #521b35;
+  background-color: #f0f5d5;
 }
 
 .alinhamento {
@@ -31,7 +31,11 @@ h1 {
   font-weight: lighter;
   text-align: center;
   padding: 0 10px;
-  color: white;
+  color: black;
+}
+
+h1:first-child {
+  margin-top: 20px;
 }
 
 .ultimonome {
@@ -42,20 +46,18 @@ h1 {
   padding: 0 10px;
   padding-bottom: 100px;
   position: relative;
-  color: white;
+  color: black;
 }
 
-.ultimonome::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 15px;
-  background-image: url(IMG/underline\ brush.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
+.divisor {
+  display: flex;
+  justify-content: center;
+}
+
+.divisorimg {
+  width: 80%;
+  max-width: 500px;
+  height: auto;
 }
 
 h2 {
@@ -64,7 +66,8 @@ h2 {
   font-size: 30px;
   margin-left: 10px;
   margin-top: 15px;
-  color: white;
+  color: black;
+  margin-bottom: 20px;
 }
 
 .fotos {
@@ -78,24 +81,25 @@ h3 {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 10px;
-  color: white;
+  color: black;
 }
 
 .mapa-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 50vw;
+  align-items: stretch;
+  height: 400px;
 }
 
 .mapa {
-  width: 80vw;
+  width: 80%;
+  max-width: 800px;
   height: 100%;
 }
 
 p {
   font-family: Helvetica;
-  color: white;
+  color: black;
   margin-left: 5px;
 }
 
@@ -106,33 +110,32 @@ footer {
 }
 
 a:link {
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
 }
 
 a:visited {
-  color: #fdfcfc00;
+  color: #00000000;
 }
 
 a:hover {
-  color: #ff4500;
+  color: #ffffff;
   font-weight: bold;
 }
 
 a:active {
-  background: rgb(255, 0, 0);
+  background: rgb(255, 255, 255);
   font-style: italic;
 }
 
 /* GRADIENTES FOTOS */
-
 .fotos {
   background-color: #ffffff34; /* Define o fundo branco */
   background-image: linear-gradient(
     to bottom,
-    #521b35,
-    #fff,
-    #521b35
+    #f0f5d5,
+    lightblue,
+    #f0f5d5
   ); /* Cria o gradiente nas bordas superior e inferior */
   padding: 15px 0;
   margin: 20px 0;
@@ -153,7 +156,8 @@ a:active {
 .carousel img {
   position: absolute;
   height: auto;
-  width: 50vw;
+  width: 50%;
+  max-width: 500px;
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
@@ -173,13 +177,11 @@ a:active {
 .botao {
   display: block;
   margin: auto;
-  background-color: #c45365;
+  background-color: white;
   padding: 1vh 2px;
-  width: 200px;
-  border: solid #fff;
+  width: 230px;
   border-radius: 50px;
   font-size: 20px;
-  color: white;
   animation: breathe 3s infinite ease-in-out;
   position: fixed;
 }
@@ -209,7 +211,7 @@ a:active {
 
 .sobre-nos {
   grid-column: 1/4;
-  border-left: 2px solid white;
+  border-left: 2px solid rgb(0, 0, 0);
   text-align: center;
   margin-top: 100px;
   margin-left: 15px;
@@ -221,14 +223,14 @@ a:active {
   align-items: center;
   align-self: center;
   justify-self: center;
-  border-bottom: solid 2px #fff;
+  border-bottom: solid 2px #000000;
   padding: auto;
 }
 
 .cerimonia {
   grid-column: 2/4;
   grid-row: 2;
-  border-left: 2px solid white;
+  border-left: 2px solid rgb(0, 0, 0);
 }
 
 .emojilocalizacao {
@@ -236,12 +238,100 @@ a:active {
   grid-row: 3;
   align-self: center;
   justify-self: center;
-  border-bottom: solid 2px #fff;
+  border-bottom: solid 2px #000000;
   padding: auto;
 }
 .localizacao {
   grid-column: 2/4;
   grid-row: 3;
-  border-left: 2px solid white;
+  border-left: 2px solid rgb(0, 0, 0);
   max-width: fit-content;
+}
+
+/* CONFIRMAÇÃO */
+.h2rsvp {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+form {
+  border: #00fff2 2px solid;
+  padding: 25px;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px;
+  box-sizing: border-box;
+  border: 2px solid #00fff2;
+  border-radius: 4px;
+}
+label {
+  display: block;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  background-color: #00fff2;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* CONTAGEM REGRESSIVA */
+
+.contagem {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  width: 100%;
+}
+
+.contagemh2 {
+  text-align: center;
+  margin-top: 100px;
+}
+
+#countdown {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 100%;
+  max-width: 750px;
+}
+
+.square {
+  background-color: #00fff2;
+  border: 2px solid #000000;
+  text-align: center;
+  font-size: 200%;
+  font-weight: bold;
+  /* padding: 30px; */
+  border-radius: 10px;
+}
+
+.label {
+  font-size: 35%;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-top: 10px;
+  color: #000000;
+}
+
+.value {
+  color: #000000;
+  font-family: permapetit;
+  font-size: 200%;
 }

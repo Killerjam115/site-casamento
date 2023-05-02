@@ -5,7 +5,7 @@ console.log(document);
 let images = carousel.querySelectorAll("img");
 let currentImageIndex = 0;
 let nextImageIndex = 1;
-let interval = 5000; // tempo de intervalo entre as transições
+let interval = 2500; // tempo de intervalo entre as transições
 images[currentImageIndex].classList.add("active");
 function changeImage() {
   images[currentImageIndex].classList.remove("active");
@@ -15,3 +15,28 @@ function changeImage() {
   nextImageIndex = (nextImageIndex + 1) % images.length;
 }
 setInterval(changeImage, interval);
+
+//contagem regressiva
+
+var countDownDate = new Date("Nov 1, 2023 19:30:00").getTime();
+
+var x = setInterval(function () {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("days").innerHTML = days;
+  document.getElementById("hours").innerHTML = hours;
+  document.getElementById("minutes").innerHTML = minutes;
+  document.getElementById("seconds").innerHTML = seconds;
+
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML =
+      "A contagem regressiva acabou!";
+  }
+}, 1000);

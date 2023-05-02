@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <link rel="icon" type="image/png" href="img/coracoes.jpg" />
+    <link rel="icon" type="image/png" href="img/kisspng-heart-blue-computer-icons-clip-art-jesus-heart-cliparts-5aae9a2651f193.4970153515213921663357.png" />
     <link
       rel="stylesheet"
       href="recursos/bootstrap.min.css"
@@ -9,9 +9,9 @@
       crossorigin="anonymous"
     />
     <meta charset="UTF-8" />
-    <title>Casamento Luiz 💍 Karen</title>
+    <title>Karen 💍 Luiz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Desktop.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   </head>
   <body>
@@ -20,16 +20,21 @@
         <h1>Karen Miyazaki</h1>
         <h1>&</h1>
         <h1 class="ultimonome">Luiz Antonio Fossa</h1>
-      </header>
+        <div class="divisor"> 
+        <img class="divisorimg" src="img/pngegg (1).png" />
+      </div>
+      </header> 
       <main>
         <div class="grid1">
         <section class="sobre-nos">
-          <h2>Sobre Nós</h2>
+          <h2>Nossa história</h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, id,
-            provident ut eius aliquid error pariatur eveniet eos nostrum quae
-            ratione dolorem dolore consequuntur ducimus est vero aperiam
-            laboriosam. Ducimus.
+            Nossa história
+Nos conhecemos há mais de 13 anos, quando começamos a trabalhar juntos na PwC. Foram muitos anos de horas intermináveis de trabalho, de histórias sobre famílias, amigos, viagens e também de muitos conselhos e apoio. Daí surgiu uma grande amizade e um respeito mútuo que transbordou as barreiras do trabalho. 
+Nós dois deixamos a PwC, mas a amizade que criamos e fortalecemos não nos deixou. Continuamos, mesmo de longe, acompanhando os passos um do outro, aplaudindo ou dando puxões de orelha quando necessário.
+Como diz uma canção “o seu amor pode estar do seu lado”, em algum momento inesperado a amizade virou carinho, que virou parceria, admiração e então nasceu o amor. 
+E assim nos conhecemos, nos identificamos, nos encontramos e nos apaixonamos como um casal de adolescentes de meia idade. 
+Agora estamos escrevendo um novo capítulo da nossa história e queremos você, querido amigo, comemorando conosco mais essa conquista!
           </p>
         </section>
         <h2 class="emojicerimonia">⛪</h2>
@@ -60,14 +65,34 @@
             <iframe
               class="mapa"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.116898878827!2d-46.735703388278246!3d-23.52829756029164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef96c4ee63615%3A0xe96086b94ac96998!2sBot%C3%A2nico%20Quintal!5e0!3m2!1spt-BR!2sbr!4v1682002863427!5m2!1spt-BR!2sbr"
-              width="450"
-              height="450"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
+        </section>
+        <h2 class="contagemh2">Quanto tempo até o evento?</h2>
+        <section class="contagem">
+          <div id="countdown">
+            <div class="square">
+              <div class="value" id="days"></div>
+              <div class="label">Dias</div>
+            </div>
+            <div class="square">
+              <div class="value" id="hours"></div>
+              <div class="label">Horas</div>
+            </div>
+            <div class="square">
+              <div class="value" id="minutes"></div>
+              <div class="label">Minutos</div>
+            </div>
+            <div class="square">
+              <div class="value" id="seconds"></div>
+              <div class="label">Segundos</div>
+            </div>
+          </div>
+          
         </section>
         <section class="fotos">
           <h2>📸</h2>
@@ -84,25 +109,23 @@
           <button 
           src="PIX.html" 
           class="botao wrapper"
-          type="button"> <a href="PIX.html" > O que Queremos? </a>          
+          type="button"> <a href="PIX.html" > Sugestão de Presente </a>          
         </button>
         </section>
-        <!-- <section class="rsvp">
-          <h2>RSVP</h2>
-          <form method="post" action="processa-rsvp.php">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required />
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required />
-            <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone" name="telefone" />
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem"></textarea>
-            <button type="submit">Enviar</button>
+        <section class="rsvp">
+          <h2 class="h2rsvp">Confirmação de presença</h2>
+          <div class="form">
+          <form action="https://api.sheetmonkey.io/form/ffVFAGruuRM9KsRccxLihq" method="post">
+            <label class="Nomeform">Nome: <input type="text" name="Name" required /></label>
+            <label class="emailform">Email: <input type="email" name="Email" required /></label>
+            <label class="telform">Telefone: <input type="tel" name="Phone Number"/></label>
+            <label class="convidadoform">Convidados: <input type="number" name="Guests" min="1" max="20" required /></label>
+            <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+            <input class="botaoform" type="submit" value="Enviar" />
           </form>
-        </section> -->
-        <script type="text/javascript" src="index.js"></script>
+        </div>
       </main>
+      <script type="text/javascript" src="index.js"></script>
       <footer>
         <p><strong>2023</strong> Luiz 💍 Karen</p>
       </footer>
