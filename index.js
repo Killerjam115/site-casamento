@@ -69,13 +69,3 @@ function openPopup() {
 function closePopup() {
   popup.classList.remove("open-popup");
 }
-
-//Scroll botão pix
-
-const scrollToBottom = () => {
-  document.documentElement.scrollTop = document.documentElement.scrollHeight;
-};
-
-document
-  .getElementById("scroll-to-end-btn")
-  .addEventListener("click", scrollToBottom);
