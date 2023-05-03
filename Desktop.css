@@ -108,6 +108,10 @@ p {
   margin-left: 5px;
 }
 
+h2 p {
+  margin: 0 30px;
+}
+
 footer {
   text-align: center;
   font-size: 10px;
@@ -218,9 +222,11 @@ a:active {
 .sobre-nos {
   grid-column: 1/4;
   border-left: 2px solid #000000;
-  text-align: center;
+  text-align: justify;
   margin-top: 100px;
   margin-left: 15px;
+  margin: 0 30px;
+  padding-left: 15px;
 }
 
 .emojicerimonia {
@@ -237,6 +243,7 @@ a:active {
   grid-column: 2/4;
   grid-row: 2;
   border-left: 2px solid #000000;
+  text-align: justify;
 }
 
 .emojilocalizacao {
@@ -252,6 +259,7 @@ a:active {
   grid-row: 3;
   border-left: 2px solid #000000;
   max-width: fit-content;
+  text-align: justify;
 }
 
 /* CONFIRMAÇÃO */
@@ -310,7 +318,7 @@ input[type="reset"] {
 }
 
 .square {
-  background-color: #00fff241;
+  background-color: #5aebe42c;
   border: 2px solid #000000;
   text-align: center;
   font-size: 150%;
@@ -405,4 +413,33 @@ input[type="reset"] {
   padding: 10px 30px;
   text-decoration: none;
   cursor: pointer;
+}
+
+/* POPUP CONFIRMAÇÃO DO FORMULARIO */
+
+#feedback {
+  display: none;
+  background-color: #5aebe444; /* Cor de fundo verde */
+  color: #000000; /* Cor do texto branco */
+  padding: 10px; /* Espaçamento interno de 10 pixels */
+  margin-bottom: 10px; /* Margem inferior de 10 pixels */
+  width: auto;
+  max-width: 333px;
+  margin: 0 auto;
+  text-align: center;
+  animation: fadeInAnimation 1s ease-in-out forwards;
+}
+
+/* FORMULÁRIO PIX */
+
+#feedbackpix {
+  display: none;
+  background-color: #5aebe444; /* Cor de fundo verde */
+  color: #000000; /* Cor do texto branco */
+  padding: 10px; /* Espaçamento interno de 10 pixels */
+  margin-bottom: 10px; /* Margem inferior de 10 pixels */
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+  animation: fadeInAnimation 1s ease-in-out forwards;
 }

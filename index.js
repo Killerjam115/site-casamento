@@ -50,7 +50,7 @@ function copiarTexto(texto) {
       document.getElementById("mensagem-copia").style.display = "block";
       setTimeout(function () {
         document.getElementById("mensagem-copia").style.display = "none";
-      }, 2500); // define o tempo de 3 segundos para o texto sumir
+      }, 2500); // define o tempo
     },
     function () {
       console.error("Falha ao copiar texto");
@@ -69,3 +69,27 @@ function openPopup() {
 function closePopup() {
   popup.classList.remove("open-popup");
 }
+
+// POP up formulario pix
+
+var meuFormulario = document.getElementById("formulariopix");
+var meuPopup = document.getElementById("feedbackpix");
+meuFormulario.addEventListener("submit", function (event) {
+  event.preventDefault();
+  var mensagem = document.getElementById("feedbackpix");
+  mensagem.innerHTML = "Obrigado!";
+  meuFormulario.reset();
+  meuPopup.style.display = "block";
+});
+
+//POP up de confirmação de formulário
+
+var meuFormulario = document.getElementById("formulariorsvp");
+var meuPopup = document.getElementById("feedback");
+meuFormulario.addEventListener("submit", function (event) {
+  event.preventDefault();
+  var mensagem = document.getElementById("feedback");
+  mensagem.innerHTML = "Obrigado por confirmar sua presença!";
+  meuFormulario.reset();
+  meuPopup.style.display = "block";
+});

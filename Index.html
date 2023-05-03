@@ -116,15 +116,16 @@ Agora estamos escrevendo um novo capítulo da nossa história e queremos você, 
         <section class="rsvp">
           <h2 class="h2rsvp">Confirmação de presença</h2>
           <div class="form">
-          <form action="https://api.sheetmonkey.io/form/ffVFAGruuRM9KsRccxLihq" method="post">
-            <label class="Nomeform">Nome: <input type="text" name="Name" required /></label>
-            <label class="emailform">Email: <input type="email" name="Email" required /></label>
-            <label class="telform">Telefone: <input type="tel" name="Phone Number"/></label>
-            <label class="convidadoform">Convidados: <input type="number" name="Guests" min="1" max="20" required /></label>
+          <form id="formulariorsvp" action="https://api.sheetmonkey.io/form/ffVFAGruuRM9KsRccxLihq" method="post">
+            <label class="Nomeform">Nome*: <input type="text" name="Name" required /></label>
+            <label>Email (opcional): <input type="email" name="Email" /></label>
+            <label class="telform">Telefone (opicional) <input type="tel" name="Phone Number"/></label>
+            <label class="convidadoform">Convidados*: <input type="number" name="Guests" min="1" max="20" required /></label>
             <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
             <input class="botaoform" type="submit" value="Enviar" />
           </form>
         </div>
+        <div id="feedback"></div>
         </section>
         <section class="Pixpopup" id="popup">
           <button type="button" onclick="closePopup()"> ❌ </button>
@@ -161,7 +162,15 @@ Agora estamos escrevendo um novo capítulo da nossa história e queremos você, 
             <h5>Chave PIX  <button onclick="copiarTexto('f541ab21-8dd0-48bb-a609-7136713346a2')">Copiar</button></h5>
           </div>
           <img class="QRcodepix" src="img/QRcodepix.png">
-         
+         <div>
+          <form id="formulariopix" action="https://api.sheetmonkey.io/form/mJSvsyLXnvn159QSd74sL5" method="post">
+            <!-- Put HTML input fields in here and see how they fill up your sheet -->
+            <label>Deixa uma mensagem para nós! <input type="text" name="Mensagem" required /></label>
+            <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+            <input type="submit" value="Submit" />
+          </form>
+          <div id="feedbackpix"></div>
+         </div>
         </section>
       </main>
       <footer>
