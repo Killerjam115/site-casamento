@@ -415,31 +415,17 @@ input[type="reset"] {
   cursor: pointer;
 }
 
-/* POPUP CONFIRMAÇÃO DO FORMULARIO */
-
-#feedback {
-  display: none;
-  background-color: #5aebe444; /* Cor de fundo verde */
-  color: #000000; /* Cor do texto branco */
-  padding: 10px; /* Espaçamento interno de 10 pixels */
-  margin-bottom: 10px; /* Margem inferior de 10 pixels */
-  width: auto;
-  max-width: 333px;
-  margin: 0 auto;
-  text-align: center;
-  animation: fadeInAnimation 1s ease-in-out forwards;
+.mensagempix {
+  height: 75px;
+  width: 100%;
+  border: 2px #5aebe42c solid;
 }
 
-/* FORMULÁRIO PIX */
-
-#feedbackpix {
-  display: none;
-  background-color: #5aebe444; /* Cor de fundo verde */
-  color: #000000; /* Cor do texto branco */
-  padding: 10px; /* Espaçamento interno de 10 pixels */
-  margin-bottom: 10px; /* Margem inferior de 10 pixels */
-  width: auto;
-  margin: 0 auto;
-  text-align: center;
-  animation: fadeInAnimation 1s ease-in-out forwards;
+.titulomensagem {
+  display: flex;
+  margin: 5px auto;
+  align-items: center;
+  justify-content: center;
+  font-family: permapetit;
+  font-size: 25px;
 }
