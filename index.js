@@ -69,3 +69,21 @@ function openPopup() {
 function closePopup() {
   popup.classList.remove("open-popup");
 }
+
+//POPup confirmação de presença
+
+const form = document.querySelector("form");
+const feedbackPopup = document.querySelector("#feedback-popup");
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault(); // impede que o formulário seja enviado normalmente
+  feedbackPopup.style.display = "block"; // exibe o popup de feedback
+
+  setTimeout(() => {
+    feedbackPopup.style.display = "none"; // oculta o popup de feedback após 3 segundos
+  }, 2000); // 3 segundos em milissegundos
+});
+
+feedbackPopup.addEventListener("click", () => {
+  feedbackPopup.style.display = "none"; // oculta o popup de feedback
+});

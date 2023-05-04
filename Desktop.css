@@ -19,6 +19,7 @@ html {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  overflow: hidden;
 }
 
 body {
@@ -278,11 +279,6 @@ a:active {
   justify-content: center;
 }
 
-form {
-  border: #00fff241 2px solid;
-  padding: 25px;
-}
-
 input {
   width: 100%;
   padding: 12px 20px;
@@ -433,4 +429,52 @@ input[type="reset"] {
   justify-content: center;
   font-family: permapetit;
   font-size: 25px;
+}
+
+/* FORMULÁRIO */
+
+.mensagemnos {
+  margin-top: 50px;
+  border: #5aebe42c solid 3px;
+  padding: 30px 20px;
+  border-radius: 4px;
+}
+
+.mensagemnos label {
+  font-family: permapetit;
+  font-size: 25px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.mensagemcorpo {
+  border: #5aebe42c solid 3px;
+  padding: 30px 20px;
+  border-radius: 4px;
+}
+
+.mensagemcorpo input {
+  margin: 10px auto;
+}
+.mensagemcorpo label {
+  text-align: center;
+}
+
+.mensagembotao {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+#feedback-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border: 2px solid #5aebe42c;
+  border-radius: 4px;
 }

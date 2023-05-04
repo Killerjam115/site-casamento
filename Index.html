@@ -116,17 +116,24 @@ Agora estamos escrevendo um novo capítulo da nossa história e queremos você, 
         <section class="rsvp">
           <h2 class="h2rsvp">Confirmação de presença</h2>
           <div class="form">
-          <form  action="https://script.google.com/macros/s/AKfycbzHzXlUWxvYHeicUexWUXnVe2eagS2wsH_mqrEDBwGXYPsACTk3u1JXQWU78BzFeVulZA/exec" method="post">
+            <iframe name="hiddenFrame" style="position: absolute; top: -10px; left:-1000px;width:1px;height: 1px;" frameborder="0"></iframe>
+          <form  action="https://script.google.com/macros/s/AKfycbzHzXlUWxvYHeicUexWUXnVe2eagS2wsH_mqrEDBwGXYPsACTk3u1JXQWU78BzFeVulZA/exec" method="post" target="hiddenFrame">
+          <div class="mensagemcorpo">
             <label>Nome*: <input type="text" name="Name" required /></label>
             <label>Email (opcional): <input type="email" name="Email" /></label>
             <label>Telefone (opicional): <input type="tel" name="Phone Number"/></label>
-            <label>Convidados*: <input type="number" name="Guests" min="1" max="20" required /></label>
-            <input class="botaoform" type="submit" value="Enviar" />
+            <label>Numero de convidados, incluindo você:* <input type="number" name="Guests" min="1" max="20" required /></label>
+          </div>
+            <div class="mensagemnos"><label >Deixa uma mensagem para nós! (opicional)</label> <textarea class="mensagempix" type="text" name="Mensagem"  required></textarea></div>
+            <div class="mensagembotao"><input class="botaoform" type="submit" value="Enviar" /></div>
           </form>
+          <section id="feedback-popup">
+            <p>Obrigado! Sua presença etá confirmada.</p>
+          </section>
         </div>
         </section>
         <section class="Pixpopup" id="popup">
-          <button type="button" onclick="closePopup()"> ❌ </button>
+          <button type="button" onclick="closePopup()"> ✖️ </button>
           <div class="intropix">
             <h2>Sugestões de presentes</h2>
             <p class="textopix">Estamos pensando em fazer algo um pouco diferente. Daí estruturamos um sistema de "crowdfunding" para nossa Lua de Mel. Seguem nossas sugestões, mas fique à vontade para escolher outra forma.  Muito obrigado
@@ -158,13 +165,6 @@ Agora estamos escrevendo um novo capítulo da nossa história e queremos você, 
             <h5>Chave PIX  <button onclick="copiarTexto('f541ab21-8dd0-48bb-a609-7136713346a2')">Copiar</button></h5>
           </div>
           <img class="QRcodepix" src="img/QRcodepix.png">
-         <div>
-          <form action="https://api.sheetmonkey.io/form/mJSvsyLXnvn159QSd74sL5" method="post">
-            <label>Nome*: <input type="text" name="Name" required /></label>
-            <label class="titulomensagem">Deixa uma mensagem para nós!</label> <textarea class="mensagempix" type="text" name="Mensagem"  required></textarea>
-            <input type="submit" value="Submit" />
-          </form>
-         </div>
         </section>
       </main>
       <footer>
