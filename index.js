@@ -82,10 +82,12 @@ form.addEventListener("submit", (event) => {
   // Define um temporizador de 3 segundos antes de limpar o formulário
   setTimeout(() => {
     form.reset(); // Limpa o formulário após 3 segundos
+    feedbackPopup.classList.add("fadeOut"); // adiciona classe para animação de saída
   }, 3000);
 
-  // Oculta o popup de feedback após 3 segundos
+  // Oculta o popup de feedback após 3 segundos e remove classe de animação
   setTimeout(() => {
     feedbackPopup.style.display = "none";
-  }, 3000);
+    feedbackPopup.classList.remove("fadeOut");
+  }, 4000);
 });

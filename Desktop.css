@@ -369,6 +369,15 @@ input[type="reset"] {
   }
 }
 
+@keyframes fadeOutAnimation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 .open-popup {
   visibility: visible;
   animation: fadeInAnimation 2s ease-in-out forwards;
@@ -478,4 +487,8 @@ input[type="reset"] {
   border: 2px solid #5aebe42c;
   border-radius: 4px;
   animation: fadeInAnimation 1s ease-in-out forwards;
+}
+
+#feedback-popup.fadeOut {
+  animation-name: fadeOutAnimation;
 }
