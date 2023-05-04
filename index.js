@@ -76,14 +76,16 @@ const form = document.querySelector("form");
 const feedbackPopup = document.querySelector("#feedback-popup");
 
 form.addEventListener("submit", (event) => {
-  event.preventDefault(); // impede que o formulário seja enviado normalmente
-  feedbackPopup.style.display = "block"; // exibe o popup de feedback
+  // Exibe o popup de feedback
+  feedbackPopup.style.display = "block";
 
+  // Define um temporizador de 3 segundos antes de limpar o formulário
   setTimeout(() => {
-    feedbackPopup.style.display = "none"; // oculta o popup de feedback após 3 segundos
-  }, 2000); // 3 segundos em milissegundos
-});
+    form.reset(); // Limpa o formulário após 3 segundos
+  }, 3000);
 
-feedbackPopup.addEventListener("click", () => {
-  feedbackPopup.style.display = "none"; // oculta o popup de feedback
+  // Oculta o popup de feedback após 3 segundos
+  setTimeout(() => {
+    feedbackPopup.style.display = "none";
+  }, 3000);
 });
