@@ -120,8 +120,7 @@ Agora estamos escrevendo um novo capítulo da nossa história e queremos você, 
             <label>Nome*: <input type="text" name="Name" required /></label>
             <label>Email (opcional): <input type="email" name="Email" /></label>
             <label>Telefone (opicional): <input type="tel" name="Phone Number"/></label>
-            <label>Numero de convidados, incluindo você*: <input type="number" name="Guests" min="1" max="20" required /></label>
-            <label class="titulomensagem">Deixa uma mensagem para nós!</label> <textarea class="mensagempix" type="text" name="Mensagem" ></textarea>
+            <label>Convidados*: <input type="number" name="Guests" min="1" max="20" required /></label>
             <input class="botaoform" type="submit" value="Enviar" />
           </form>
         </div>
@@ -159,6 +158,13 @@ Agora estamos escrevendo um novo capítulo da nossa história e queremos você, 
             <h5>Chave PIX  <button onclick="copiarTexto('f541ab21-8dd0-48bb-a609-7136713346a2')">Copiar</button></h5>
           </div>
           <img class="QRcodepix" src="img/QRcodepix.png">
+         <div>
+          <form action="https://api.sheetmonkey.io/form/mJSvsyLXnvn159QSd74sL5" method="post">
+            <label>Nome*: <input type="text" name="Name" required /></label>
+            <label class="titulomensagem">Deixa uma mensagem para nós!</label> <textarea class="mensagempix" type="text" name="Mensagem"  required></textarea>
+            <input type="submit" value="Submit" />
+          </form>
+         </div>
         </section>
       </main>
       <footer>
