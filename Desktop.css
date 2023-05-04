@@ -108,6 +108,11 @@ p {
   margin-left: 5px;
 }
 
+.textopix {
+  text-align: justify;
+  margin: 0 60px;
+}
+
 h2 p {
   margin: 0 30px;
 }

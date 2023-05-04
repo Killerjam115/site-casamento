@@ -116,24 +116,21 @@ Agora estamos escrevendo um novo capítulo da nossa história e queremos você, 
         <section class="rsvp">
           <h2 class="h2rsvp">Confirmação de presença</h2>
           <div class="form">
-          <form  action="https://api.sheetmonkey.io/form/ffVFAGruuRM9KsRccxLihq" method="post">
-            <label class="Nomeform">Nome*: <input type="text" name="Name" required /></label>
+          <form  action="https://script.google.com/macros/s/AKfycbzHzXlUWxvYHeicUexWUXnVe2eagS2wsH_mqrEDBwGXYPsACTk3u1JXQWU78BzFeVulZA/exec" method="post">
+            <label>Nome*: <input type="text" name="Name" required /></label>
             <label>Email (opcional): <input type="email" name="Email" /></label>
-            <label class="telform">Telefone (opicional): <input type="tel" name="Phone Number"/></label>
-            <label class="convidadoform">Convidados*: <input type="number" name="Guests" min="1" max="20" required /></label>
-            <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+            <label>Telefone (opicional): <input type="tel" name="Phone Number"/></label>
+            <label>Numero de convidados, incluindo você*: <input type="number" name="Guests" min="1" max="20" required /></label>
+            <label class="titulomensagem">Deixa uma mensagem para nós!</label> <textarea class="mensagempix" type="text" name="Mensagem" ></textarea>
             <input class="botaoform" type="submit" value="Enviar" />
           </form>
         </div>
-        
         </section>
         <section class="Pixpopup" id="popup">
           <button type="button" onclick="closePopup()"> ❌ </button>
           <div class="intropix">
             <h2>Sugestões de presentes</h2>
-            <p>Estamos pensando em fazer algo um pouco diferente: 
-              Ao invez de pedir presentes para o casamento, pensamos em um sistema de "nos ajude a se presentear!"
-              Estão seguem abaixo os valores que precisamos para comprar nosso presentes!
+            <p class="textopix">Estamos pensando em fazer algo um pouco diferente. Daí estruturamos um sistema de "crowdfunding" para nossa Lua de Mel. Seguem nossas sugestões, mas fique à vontade para escolher outra forma.  Muito obrigado
             </p>
             <div>
               <h3>Opção I: Almoço/jantar na praia – R$ 200,00</h3>
@@ -162,13 +159,6 @@ Agora estamos escrevendo um novo capítulo da nossa história e queremos você, 
             <h5>Chave PIX  <button onclick="copiarTexto('f541ab21-8dd0-48bb-a609-7136713346a2')">Copiar</button></h5>
           </div>
           <img class="QRcodepix" src="img/QRcodepix.png">
-         <div>
-          <form action="https://api.sheetmonkey.io/form/mJSvsyLXnvn159QSd74sL5" method="post">
-            <label class="titulomensagem">Deixa uma mensagem para nós!</label> <textarea class="mensagempix" type="text" name="Mensagem"  required></textarea>
-            <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
-            <input type="submit" value="Submit" />
-          </form>
-         </div>
         </section>
       </main>
       <footer>
