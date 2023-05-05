@@ -41,23 +41,6 @@ var x = setInterval(function () {
   }
 }, 1000);
 
-//Copiar informações para TED ou PIX
-
-function copiarTexto(texto) {
-  navigator.clipboard.writeText(texto).then(
-    function () {
-      console.log("Texto copiado com sucesso: " + texto);
-      document.getElementById("mensagem-copia").style.display = "block";
-      setTimeout(function () {
-        document.getElementById("mensagem-copia").style.display = "none";
-      }, 2500); // define o tempo
-    },
-    function () {
-      console.error("Falha ao copiar texto");
-    }
-  );
-}
-
 //PopUp PIX
 
 let popup = document.getElementById("popup");
@@ -70,6 +53,17 @@ function closePopup() {
   popup.classList.remove("open-popup");
 }
 
+function abrirPagina(url) {
+  //Botões para enviar a página do banco
+  window.open(url, "_blank");
+}
+
+function copiarChave(botao) {
+  const chave = "+5511972883864";
+  navigator.clipboard.writeText(chave);
+  botao.innerText = "copiado!";
+}
+
 //POPup confirmação de presença
 
 const form = document.querySelector("form");
@@ -79,9 +73,13 @@ form.addEventListener("submit", (event) => {
   // Exibe o popup de feedback
   feedbackPopup.style.display = "block";
 
+  setTimeout(() => {
+    // Limpa o formulário
+    form.reset();
+  }, 500);
+
   // Define um temporizador de 3 segundos antes de limpar o formulário
   setTimeout(() => {
-    form.reset(); // Limpa o formulário após 3 segundos
     feedbackPopup.classList.add("fadeOut"); // adiciona classe para animação de saída
   }, 3000);
 

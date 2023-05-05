@@ -440,6 +440,23 @@ input[type="reset"] {
   font-size: 25px;
 }
 
+.seçãobotpix {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.botaopix {
+  margin: 15px 0;
+}
+
+.Pixpopup p {
+  text-align: center;
+  margin-top: 40px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 /* FORMULÁRIO */
 
 .mensagemnos {
@@ -483,8 +500,7 @@ input[type="reset"] {
   transform: translate(-50%, -50%);
   width: 300px;
   padding: 20px;
-  background-color: #fff;
-  border: 2px solid #5aebe42c;
+  background-color: #5aebe4;
   border-radius: 4px;
   animation: fadeInAnimation 1s ease-in-out forwards;
 }

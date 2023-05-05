@@ -140,31 +140,27 @@ Agora estamos escrevendo um novo capítulo da nossa história e queremos você, 
             </p>
             <div>
               <h3>Opção I: Almoço/jantar na praia – R$ 200,00</h3>
+              <div class="seçãobotpix"><button class="botaopix" onclick="abrirPagina('https://nubank.com.br/pagar/ss8cs/uUkR6stSTh')">Enviar R$ 200,00</button></div>
           </div>
           <div>
               <h3>Opção II: Passeio de barco – R$ 400,00</h3>
+              <div class="seçãobotpix"><button class="botaopix" onclick="abrirPagina('https://nubank.com.br/pagar/ss8cs/GTxz72CSY8')">Enviar R$ 400,00</button></div>
           </div>
           <div>
               <h3>Opção III: Diária de hotel – R$ 800,00</h3>
+              <div class="seçãobotpix"><button class="botaopix" onclick="abrirPagina('https://nubank.com.br/pagar/ss8cs/USUAC02kM6')">Enviar R$ 800,00</button></div>
           </div>
           <div>
               <h3>Opção IV: Passagens aéreas – R$ 1.000,00</h3>
+              <div class="seçãobotpix"><button class="botaopix" onclick="abrirPagina('https://nubank.com.br/pagar/ss8cs/vHVh95BI0J')">Enviar R$ 800,00</button></div>
           </div>
-          </div>
-          <div class="informações-da-conta">
-            <h2>Informações da conta</h2>
-            <div id="mensagem-copia" 
-              style="display:none;"
-              class="copiacola">
-              Texto copiado para a área de transferência
-            </div>
-            <h5>Banco: Nubank (260)   <button onclick="copiarTexto('260')">Copiar</button></h5>
-            <h5>Agência: 0001   <button onclick="copiarTexto('0001')">Copiar</button></h5>
-            <h5>Conta Corrente: 48346444-1   <button onclick="copiarTexto('48346444-1')">Copiar</button></h5>
-            <h5>CPF: 321.937.468-93   <button onclick="copiarTexto('321.937.468-93')">Copiar</button></h5>
-            <h5>Chave PIX  <button onclick="copiarTexto('f541ab21-8dd0-48bb-a609-7136713346a2')">Copiar</button></h5>
-          </div>
+        </div>
+          <p class="textpix">Caso queira nos presentiar com outro valor, sinta-se a vontade! 
+            A chave está abaixo:</p>
           <img class="QRcodepix" src="img/QRcodepix.png">
+          <div class="seçãobotpix">
+            <button class="botaopix" onclick="copiarChave(this)">copiar a chave</button>
+          </div>
         </section>
       </main>
       <footer>
