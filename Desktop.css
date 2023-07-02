@@ -149,7 +149,7 @@ a:active {
   background-image: linear-gradient(
     to bottom,
     #f0f5d5,
-    #00fff241,
+    #ff58337e,
     #f0f5d5
   ); /* Cria o gradiente nas bordas superior e inferior */
   padding: 15px 0;
@@ -193,7 +193,7 @@ a:active {
 .botao {
   display: block;
   margin: auto;
-  background-color: #00fff241;
+  background-color: #ff58337e;
   padding: 1vh 2px;
   width: 230px;
   border-radius: 50px;
@@ -285,7 +285,7 @@ input {
   padding: 12px 20px;
   margin: 10px;
   box-sizing: border-box;
-  border: 2px solid #00fff241;
+  border: 2px solid #ff58337e;
   border-radius: 4px;
 }
 label {
@@ -295,7 +295,7 @@ label {
 input[type="button"],
 input[type="submit"],
 input[type="reset"] {
-  background-color: #00fff241;
+  background-color: #ff58337e;
   border: none;
   color: #000000;
   padding: 16px 32px;
@@ -320,7 +320,7 @@ input[type="reset"] {
 }
 
 .square {
-  background-color: #5aebe42c;
+  background-color: #ff58337e;
   border: 2px solid #000000;
   text-align: center;
   font-size: 150%;
@@ -418,7 +418,7 @@ input[type="reset"] {
 }
 
 .Pixpopup button {
-  background-color: #00fff241;
+  background-color: #ff58337e;
   border: none;
   color: #000000;
   padding: 10px 30px;
@@ -429,7 +429,7 @@ input[type="reset"] {
 .mensagempix {
   height: 75px;
   width: 100%;
-  border: 5px #5aebe42c solid;
+  border: 5px #ff58337e solid;
 }
 
 .titulomensagem {
@@ -462,7 +462,7 @@ input[type="reset"] {
 
 .mensagemnos {
   margin-top: 50px;
-  border: #5aebe42c solid 3px;
+  border: #ff58337e solid 3px;
   padding: 30px 20px;
   border-radius: 4px;
 }
@@ -475,7 +475,7 @@ input[type="reset"] {
 }
 
 .mensagemcorpo {
-  border: #5aebe42c solid 3px;
+  border: #ff58337e solid 3px;
   padding: 30px 20px;
   border-radius: 4px;
 }
@@ -501,7 +501,7 @@ input[type="reset"] {
   transform: translate(-50%, -50%);
   width: 300px;
   padding: 20px;
-  background-color: #5aebe4;
+  background-color: #ff58337e;
   border-radius: 4px;
   animation: fadeInAnimation 1s ease-in-out forwards;
 }
